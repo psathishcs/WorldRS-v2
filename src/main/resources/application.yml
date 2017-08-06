@@ -1,0 +1,31 @@
+
+server:
+  port: 9000
+  contextPath: /v2/world/api
+
+logging:
+  level:
+    org.world.rs.controllers: INFO
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
+    
+entitymanager:
+  packagesToScan: org.world.rs
+spring:
+  application:
+    name: worldrs-v2
+    instance_id: 001
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://hadoop.master.com:3306/world
+    username: root
+    password: Jun#2017
+    initialize: true
+    testWhileIdle: 1
+    validationQuery: SELECT 1
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
