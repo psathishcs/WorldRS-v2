@@ -6,8 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@EnableAutoConfiguration
 @EnableDiscoveryClient
 @SpringBootApplication
 public class WorldApplication {
