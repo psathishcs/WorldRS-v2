@@ -1,3 +1,11 @@
 spring:
   application:
-    name: worldrs
+    name: worldrs-v2
+  profiles:
+    active: i000
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: root
+      password: s3cr3t
+    
